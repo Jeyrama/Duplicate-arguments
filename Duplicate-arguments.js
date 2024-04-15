@@ -17,3 +17,7 @@ Examples:
 function solution(){return new Set(arguments).size!=arguments.length;}
 
 // or
+
+function solution(...args){
+  return args.length !== new Set(args).size;
+}
